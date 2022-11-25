@@ -1,0 +1,7 @@
+data=read.csv('D:/研一/课程/交通数据分析与应用/R语言作业2/data-assignment/iri.csv')
+aggregate(data$IRI, by=list(STATE_CODE=data$STATE_CODE),min)
+#aggregate(data$IRI, by=list(STATE_CODE=data$STATE_CODE),max)
+#aggregate(data$IRI, by=list(STATE_CODE=data$STATE_CODE),mean)
+#aggregate(data$IRI, by=list(STATE_CODE=data$STATE_CODE,SHRP_ID=data$SHRP_ID,CONSTRUCTION_NO=data$CONSTRUCTION_NO),min)
+#aggregate(data$IRI, by=list(STATE_CODE=data$STATE_CODE,SHRP_ID=data$SHRP_ID,CONSTRUCTION_NO=data$CONSTRUCTION_NO),min)
+#aggregate(data$IRI, by=list(STATE_CODE=data$STATE_CODE,SHRP_ID=data$SHRP_ID,CONSTRUCTION_NO=data$CONSTRUCTION_NO),mean)

@@ -1,0 +1,7 @@
+library(dplyr) 
+data1=read.csv('D:/研一/课程/交通数据分析与应用/R语言作业2/data-assignment/PERSON.csv')
+data2=read.csv('D:/研一/课程/交通数据分析与应用/R语言作业2/data-assignment/ACCIDENT.csv')
+newdata <- left_join(data1,data2,by=intersect(names(data1),names(data2)))
+dim(newdata)
+which(is.na(newdata),arr.ind = T) 
+sum(is.na(newdata$MAKE))
